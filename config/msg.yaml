@@ -1,0 +1,82 @@
+# Message configuration file
+# Contains all messages used in the application
+
+# Success messages
+success:
+  general: "Operation completed successfully"
+  created: "Resource created successfully"
+  updated: "Resource updated successfully"
+  deleted: "Resource deleted successfully"
+  
+  # User related success messages
+  user:
+    created: "User created successfully"
+    updated: "User profile updated successfully"
+    deleted: "User account deleted successfully"
+    login: "Login successful"
+    logout: "Logout successful"
+    password_reset: "Password reset successful"
+    
+  # Ticket related success messages
+  ticket:
+    created: "Ticket created successfully"
+    updated: "Ticket updated successfully"
+    deleted: "Ticket deleted successfully"
+    assigned: "Ticket assigned successfully"
+    status_changed: "Ticket status updated successfully"
+
+# Error messages
+error:
+  general: "An error occurred"
+  not_found: "Resource not found"
+  validation: "Validation error"
+  unauthorized: "Unauthorized access"
+  forbidden: "Forbidden access"
+  server_error: "Internal server error"
+  
+  # User related error messages
+  user:
+    not_found: "User not found"
+    already_exists: "User already exists"
+    invalid_credentials: "Invalid email or password"
+    account_locked: "Account is locked"
+    password_mismatch: "Passwords do not match"
+    
+  # Ticket related error messages
+  ticket:
+    not_found: "Ticket not found"
+    already_closed: "Ticket is already closed"
+    invalid_status: "Invalid ticket status"
+    invalid_priority: "Invalid ticket priority"
+    
+  # Authentication related error messages
+  auth:
+    token_expired: "Authentication token expired"
+    invalid_token: "Invalid authentication token"
+    missing_token: "Authentication token is missing"
+    
+  # Database related error messages
+  database:
+    connection_error: "Database connection error"
+    query_error: "Database query error"
+    transaction_error: "Database transaction error"
+
+# Validation messages
+validation:
+  required: "This field is required"
+  min_length: "Minimum length is {min} characters"
+  max_length: "Maximum length is {max} characters"
+  email: "Please enter a valid email address"
+  password: "Password must be at least 8 characters and include letters and numbers"
+  date: "Please enter a valid date"
+  number: "Please enter a valid number"
+  
+# Notification messages
+notification:
+  email:
+    welcome: "Welcome to our platform"
+    password_reset: "Password reset request"
+    account_verification: "Account verification"
+    ticket_created: "New ticket created"
+    ticket_updated: "Ticket updated"
+    ticket_assigned: "Ticket assigned to you"
